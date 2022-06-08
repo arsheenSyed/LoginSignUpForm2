@@ -1,10 +1,18 @@
 import React from "react";
 
 class LogIn extends React.Component {
+  state = {
+    isTrue: false,
+  };
+
+  handleFunction() {
+    this.setstate({ isTrue: true });
+  }
+
   render() {
     return (
-      <div className="login p-3">
-        <h1>Login</h1>
+      <div className="login p-5">
+        <h3>Login</h3>
 
         <hr className="light" />
         <form className="pt-3">
@@ -29,7 +37,13 @@ class LogIn extends React.Component {
           </div>
 
           <div className="form-group">
-            <a href="#">SignUp</a>
+            <a
+              href="#"
+              styles={"fontSize: 12px;"}
+              onClick={this.handleFunction}
+            >
+              SignUp
+            </a>
           </div>
           <button type="submit" className="btn btn-primary">
             Submit

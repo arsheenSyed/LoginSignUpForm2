@@ -3,11 +3,11 @@ import React from "react";
 class SignUp extends React.Component {
   render() {
     return (
-      <div className="signup p-3">
-        <h1>SignUp</h1>
+      <div className="signup p-5" styles={"padding: 15px"}>
+        <h3>SignUp</h3>
 
         <hr className="light" />
-        <form className="pt-3">
+        <form className="pt-5">
           <div className="form-group">
             <label>User Name</label>
             <input
